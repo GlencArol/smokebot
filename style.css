@@ -1,0 +1,51 @@
+/* Basic reset and full-screen background */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* Background image resembling a poor man's house */
+body {
+  background: url('assets/poor-house-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Game container for positioning */
+#game-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Score display styling */
+#score {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  font-size: 24px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* Styling for the man image */
+#man {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  cursor: pointer;
+}
+
+/* Upgrade button styling */
+#upgrade-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
